@@ -1,0 +1,5 @@
+# Ignore application.properties files
+application.properties
+
+# Ignore .yml files
+*.ymlzipkin-server-*.jar

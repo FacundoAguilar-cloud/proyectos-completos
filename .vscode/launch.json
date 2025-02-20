@@ -1,0 +1,72 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "SecurityConfig",
+            "request": "launch",
+            "mainClass": "com.security.msvc.msvc_security_auth.config.SecurityConfig",
+            "projectName": "msvc-security-auth"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-MsvcEurekaserverApplication<msvc-eurekaserver>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.msvc.eurekaserver.msvc_eurekaserver.MsvcEurekaserverApplication",
+            "projectName": "msvc-eurekaserver",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env",
+            "vmArgs": " -Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.port=65316 -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.ssl=false -Dspring.jmx.enabled=true -Djava.rmi.server.hostname=localhost -Dspring.application.admin.enabled=true -Dspring.boot.project.name=msvc-eurekaserver"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-MsvcCoursesApplication<msvc-courses>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.msvc.courses.msvc_courses.MsvcCoursesApplication",
+            "projectName": "msvc-courses",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-MsvcStudentsApplication<msvc-students>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.msvc.students.msvc_students.MsvcStudentsApplication",
+            "projectName": "msvc-students",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-MsvcGatewayApplication<msvc-gateway>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.msvc.gateway.msvc_gateway.MsvcGatewayApplication",
+            "projectName": "msvc-gateway",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-MsvcConfigserverApplication<msvc-configserver>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.msvc.configserver.msvc_configserver.MsvcConfigserverApplication",
+            "projectName": "msvc-configserver",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-MsvcSecurityAuthApplication<msvc-security-auth>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.security.msvc.msvc_security_auth.MsvcSecurityAuthApplication",
+            "projectName": "msvc-security-auth",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
